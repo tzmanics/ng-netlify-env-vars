@@ -1,0 +1,7 @@
+[build]
+  command = "ng build"
+  publish = "dist/env-var-example"
+  functions = "netlify/functions"
+
+[context.production]
+  environment = { ENV_VAR_EXAMPLE = "peek a boo!" }
