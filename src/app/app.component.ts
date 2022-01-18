@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { environment } from 'src/environments/environment';
-import { getEnvVarList } from '../../utils/envVarList';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +6,5 @@ import { getEnvVarList } from '../../utils/envVarList';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  processEnv: any = getEnvVarList();
+  envVar: any = 'thing';
 }
